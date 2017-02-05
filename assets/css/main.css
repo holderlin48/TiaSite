@@ -1340,11 +1340,11 @@
 	}
 
 	input, textarea, select {
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Courier New', Courier, monospace;
 		font-weight: 300;
 		font-size: 17pt;
 		line-height: 1.75em;
-		color: #888;
+		color: #FF69B4;
 		-webkit-text-stroke: 0.1px;
 	}
 
