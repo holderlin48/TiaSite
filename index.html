@@ -22,7 +22,17 @@
 				</footer>
 			</section>
 		<div id="TiasPlace" style="width:400px;height:400px;">  </div>
-
+    <script>
+                             function myMap() {
+                             var mapCanvas = document.getElementById("TiasPlace");
+                             var mapOptions = {
+                             center: new google.maps.LatLng(42.745031, -71.200971), zoom: 10
+                                              };
+                             var map = new google.maps.Map(mapCanvas, mapOptions);
+                                              }
+                        </script>
+		 <script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0VbqqkWD6PMmzZL5JaLhW7BkzQw-VINc&callback=myMap"></script>
 		<!-- Footer -->
 			<section id="footer">
 			<footer> <a href="https://www.ouidad.com">Ouidad Specialist</a></footer>
@@ -34,15 +44,7 @@
 			</section>
 
 		<!-- Scripts -->
-	                <script>
-                             function myMap() {
-                             var mapCanvas = document.getElementById("TiasPlace");
-                             var mapOptions = {
-                             center: new google.maps.LatLng(42.745031, -71.200971), zoom: 10
-                                              };
-                             var map = new google.maps.Map(mapCanvas, mapOptions);
-                                              }
-                        </script>
+	            
 		       
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -50,7 +52,6 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-                        <script async defer
-				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0VbqqkWD6PMmzZL5JaLhW7BkzQw-VINc&callback=myMap"></script>
+                       
 	</body>
 </html>
