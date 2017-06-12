@@ -1310,14 +1310,6 @@
 
 /* Basic */
 
-html { 
-  background: url("Tia_Hair.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 	@-ms-viewport {
 		width: device-width;
 	}
@@ -2001,7 +1993,13 @@ html {
 		.icon > .label {
 			display: none;
 		}
-
+html { 
+  background: url("Tia_Hair.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 /* Header */
 
 	#header {
