@@ -54,12 +54,15 @@ Tip: Try to remove the background-attachment property to remove the scrolling ef
 		<div id="TiasPlace">  </div>
     <script>
                              function myMap() {
-                             
+                             var myCenter = new google.maps.LatLng(42.745031, -71.200971);
                              var mapOptions = {
-                             center: new google.maps.LatLng(42.745031, -71.200971), zoom: 10
+                             center: myCenter, zoom: 10
                                               };
                             var map = new google.maps.Map(document.getElementById("TiasPlace"), mapOptions);
+		            var marker = new google.maps.Marker({position:myCenter});
+                              marker.setMap(map);
                                               }
+	                    
                         </script>
 		 <script async defer
 				src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDDV184huNTCCyEVXO448O6VTqOlNNQMtU&callback=myMap"></script>
