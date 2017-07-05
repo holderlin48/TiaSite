@@ -13,18 +13,40 @@ html {
   background-attachment: fixed;
    ">
 	
+<style>
+  #TiasPlace {
+    width:200px;
+    height:200px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+</style>
 
+<div id="TiasPlace">  
+    <script>
+                             function myMap() {
+                             var myCenter = new google.maps.LatLng(42.745031, -71.200971);
+                             var mapOptions = {
+                             center: myCenter, zoom: 8
+                                              };
+                            var map = new google.maps.Map(document.getElementById("TiasPlace"), mapOptions);
+		            var marker = new google.maps.Marker({position:myCenter});
+                              marker.setMap(map);
+                                              }
+	                    
+                        </script>
+		 <script async defer
+				src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDDV184huNTCCyEVXO448O6VTqOlNNQMtU&callback=myMap"></script>
+		</div>
 <head>
 <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
 <style>
 body {
     font-family: 'Nova Mono';font-size: 22px;
-	position: fixed;
 }
 </style>
-<style>
-	div { position: fixed; }
-</style>
+
 <meta charset=utf-8 />
 <title>Test</title>
 <style>
@@ -59,15 +81,7 @@ li a:hover {
     background-color: white;
 }
 </style>
-<style>
-  #TiasPlace {
-    width:200px;
-    height:200px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-  }
-</style>
+
 	
 </head>
 
@@ -85,22 +99,7 @@ li a:hover {
   <li><a href="https://www.ouidad.com">Ouidad Specialist</a></li>
 </ul>	
 
-		<div id="TiasPlace">  
-    <script>
-                             function myMap() {
-                             var myCenter = new google.maps.LatLng(42.745031, -71.200971);
-                             var mapOptions = {
-                             center: myCenter, zoom: 8
-                                              };
-                            var map = new google.maps.Map(document.getElementById("TiasPlace"), mapOptions);
-		            var marker = new google.maps.Marker({position:myCenter});
-                              marker.setMap(map);
-                                              }
-	                    
-                        </script>
-		 <script async defer
-				src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDDV184huNTCCyEVXO448O6VTqOlNNQMtU&callback=myMap"></script>
-		</div>
+
 			<!-- Footer -->
 			
 
