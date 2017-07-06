@@ -13,6 +13,16 @@ html {
   background-attachment: fixed;
    ">
 	
+
+
+
+<head>
+<link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
+<style>
+body {
+    font-family: 'Nova Mono';font-size: 17px;
+}
+</style>
 <style>
   #TiasPlace {
     width:100px;
@@ -22,31 +32,6 @@ html {
     right: 0;
   }
 </style>
-
-<div id="TiasPlace">  
-    <script>
-                             function myMap() {
-                             var myCenter = new google.maps.LatLng(42.745031, -71.200971);
-                             var mapOptions = {
-                             center: myCenter, zoom: 8
-                                              };
-                            var map = new google.maps.Map(document.getElementById("TiasPlace"), mapOptions);
-		            var marker = new google.maps.Marker({position:myCenter});
-                              marker.setMap(map);
-                                              }
-	                    
-                        </script>
-		 <script async defer
-				src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDDV184huNTCCyEVXO448O6VTqOlNNQMtU&callback=myMap"></script>
-		</div>
-<head>
-<link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
-<style>
-body {
-    font-family: 'Nova Mono';font-size: 17px;
-}
-</style>
-
 <meta charset=utf-8 />
 <title>Test</title>
 <style>
@@ -81,7 +66,30 @@ li a:hover {
     background-color: white;
 }
 </style>
+<style>
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+</style>
 	
 </head>
 
@@ -98,7 +106,27 @@ li a:hover {
    <li><a href="#contact">Hours</a></li>
   <li><a href="https://www.ouidad.com">Ouidad Specialist</a></li>
 </ul>	
-
+<div class="dropdown">
+	<ul><li>Map</li></ul>
+  <div class="dropdown-content">
+    <div id="TiasPlace">  
+    <script>
+                             function myMap() {
+                             var myCenter = new google.maps.LatLng(42.745031, -71.200971);
+                             var mapOptions = {
+                             center: myCenter, zoom: 8
+                                              };
+                            var map = new google.maps.Map(document.getElementById("TiasPlace"), mapOptions);
+		            var marker = new google.maps.Marker({position:myCenter});
+                              marker.setMap(map);
+                                              }
+	                    
+                        </script>
+		 <script async defer
+				src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDDV184huNTCCyEVXO448O6VTqOlNNQMtU&callback=myMap"></script>
+		</div>
+  </div>
+</div>
 
 			<!-- Footer -->
 			
