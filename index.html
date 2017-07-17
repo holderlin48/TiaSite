@@ -58,7 +58,7 @@ li {
     float: left;
 }
 
-li a {
+li a , .dropbtn{
     display: block;
     color: black;
     text-align: right;
@@ -66,7 +66,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+li a:hover, .dropdown:hover .dropbtn {
     background-color: #f2e3e3;
 }
 </style>
@@ -103,9 +103,12 @@ li.dropdown {
 	
 	<ul>
   <img style = "display: block; float: left; height: 53px; width: 95px; object-fit: contain" src="assets/css/Test2poo.svg" alt="logo"/>
-  <li><a href="#home">About</a> <div class="dropdown-content">
-    <p>With over 20 years experience providing quality hair care service at affordable prices, the customer always comes first.</p>
-  </div></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">About</a>
+    <div class="dropdown-content">
+      <p>With over 20 years experience providing quality hair care service at affordable prices, the customer always comes first.</p>
+    </div>
+  </li>
   <li><a href="#contact">Contact</a></li>
    <li><a href="#contact">Hours</a></li>
   <li><a href="https://www.ouidad.com">Ouidad Specialist</a></li>
